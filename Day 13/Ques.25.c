@@ -1,3 +1,4 @@
+//Q25: Basic calculator using switch-case for +, -, *, /, %.
 #include <stdio.h>
 
 int main() {

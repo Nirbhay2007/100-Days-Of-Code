@@ -1,3 +1,4 @@
+//Q23: Calculate library fine based on late days with slab rates; >30 cancel.
 #include <stdio.h>
 
 int main() {

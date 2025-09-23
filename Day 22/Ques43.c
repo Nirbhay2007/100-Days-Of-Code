@@ -1,3 +1,4 @@
+//Q43: Check if a number is a strong number.
 #include <stdio.h>
 
 long long factorial(int d) {

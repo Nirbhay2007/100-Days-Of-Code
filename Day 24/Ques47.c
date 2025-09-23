@@ -1,11 +1,4 @@
-/*
-Write a program to print the following pattern:
-*
-**
-***
-****
-*****
-*/
+//Q47: Print a right-angled triangle pattern of asterisks.
 #include <stdio.h>
 int main() {
 	int i, j;

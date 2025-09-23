@@ -1,11 +1,4 @@
-/*
-Write a program to print the following pattern:
-*****
- ****
-  ***
-   **
-    *
-*/
+//Q50: Print the inverted right-aligned triangle of asterisks.
 #include <stdio.h>
 
 int main() {

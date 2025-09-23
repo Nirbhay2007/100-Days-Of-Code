@@ -1,3 +1,4 @@
+//Q35: Print all factors of a given number.
 #include <stdio.h>
 
 int main() {

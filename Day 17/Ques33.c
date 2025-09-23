@@ -1,3 +1,4 @@
+//Q33: Check if a number is an Armstrong number.
 #include <stdio.h>
 
 int main() {

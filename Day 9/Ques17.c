@@ -1,3 +1,4 @@
+//Q17: Solve a quadratic equation and print the nature of its roots.
 #include <stdio.h>
 #include <math.h>
 

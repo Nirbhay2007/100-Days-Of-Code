@@ -1,3 +1,4 @@
+//Q54: Print the symmetric pyramid pattern (up then down).
 #include <stdio.h>
 
 int main() {

@@ -1,3 +1,4 @@
+//Q10: Convert seconds to hh:mm:ss format.
 #include <stdio.h>
 
 int main() {

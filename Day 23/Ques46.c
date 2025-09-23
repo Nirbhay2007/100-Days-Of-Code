@@ -1,3 +1,4 @@
+//Q46: Print a 5x5 block of asterisks pattern.
 #include <stdio.h>
 
 int main() {

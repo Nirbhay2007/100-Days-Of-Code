@@ -1,3 +1,4 @@
+//Q8: Calculate the sum of the first n natural numbers.
 #include <stdio.h>
 
 int main() {

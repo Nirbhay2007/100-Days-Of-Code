@@ -1,3 +1,4 @@
+//Q24: Calculate electricity bill using unit slabs: 100@5, next100@7, next100@10, above@12.
 #include <stdio.h>
 
 #define MAX(a, b) ((a) > (b) ? (a) : (b))

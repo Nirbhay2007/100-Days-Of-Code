@@ -1,24 +1,4 @@
-/*
-Write a program to print the following pattern:
-
-*
-
-*
-*
-*
-
-*
-*
-*
-*
-*
-
-*
-*
-*
-
-*
-*/
+//Q52: Print the specified star pattern with spaced rows (as per prompt).
 #include <stdio.h>
 
 int main() {

@@ -1,3 +1,4 @@
+//Q26: Print numbers from 1 to n.
 #include <stdio.h>
 
 int main() {

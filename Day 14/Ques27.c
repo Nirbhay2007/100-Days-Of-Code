@@ -1,3 +1,4 @@
+//Q27: Print the sum of the first n odd numbers.
 #include <stdio.h>
 
 int main() {

@@ -1,3 +1,4 @@
+//Q21: Print month name and number of days for a given month number.
 #include <stdio.h>
 
 int main() {

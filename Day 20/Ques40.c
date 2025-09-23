@@ -1,3 +1,4 @@
+//Q40: Find the 1’s complement of a binary number and print it.
 #include <stdio.h>
 
 int main() {

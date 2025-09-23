@@ -1,15 +1,4 @@
-/*
-Write a program to print the following pattern:
-*
-***
-*****
-*******
-*********
-*******
-*****
-***
-*
-*/
+//Q53: Print the diamond-like star pattern with peak at 9 stars.
 #include <stdio.h>
 
 int main() {

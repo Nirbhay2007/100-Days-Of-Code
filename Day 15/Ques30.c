@@ -1,3 +1,4 @@
+//Q30: Reverse a given number.
 #include <stdio.h>
 
 int main() {

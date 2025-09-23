@@ -1,3 +1,4 @@
+//Q41: Swap the first and last digit of a number.
 #include <stdio.h>
 
 int main() {

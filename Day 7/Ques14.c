@@ -1,3 +1,4 @@
+//Q14: Classify a character as vowel, consonant, or non-alphabet.
 #include <stdio.h>
 
 int main() {
@@ -6,7 +7,7 @@ int main() {
 	printf("Enter a character: ");
 	scanf(" %c", &ch);
 
-	// Convert to lowercase for easier comparison
+	
 	char lower = ch;
 	if (ch >= 'A' && ch <= 'Z') {
 		lower = ch + ('a' - 'A');

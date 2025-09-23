@@ -1,3 +1,4 @@
+//Q12: Determine whether a number is positive, negative, or zero.
 #include <stdio.h>
 
 int main() {

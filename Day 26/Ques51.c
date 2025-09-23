@@ -1,11 +1,4 @@
-/*
-Write a program to print the following pattern:
-    5
-   45
-  345
- 2345
-12345
-*/
+//Q51: Print the right-aligned increasing triangle ending at 12345.
 #include <stdio.h>
 
 int main() {

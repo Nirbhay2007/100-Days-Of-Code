@@ -1,3 +1,4 @@
+//Q32: Check if a number is a palindrome.
 #include <stdio.h>
 
 int main() {

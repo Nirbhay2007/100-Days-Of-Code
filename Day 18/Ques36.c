@@ -1,3 +1,4 @@
+//Q36: Find the HCF (GCD) of two numbers.
 #include <stdio.h>
 
 int main() {

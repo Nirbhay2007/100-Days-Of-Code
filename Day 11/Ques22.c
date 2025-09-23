@@ -1,3 +1,4 @@
+//Q22: Compute profit or loss percentage based on cost price and selling price.
 #include <stdio.h>
 
 int main() {

@@ -1,4 +1,6 @@
 #include <stdio.h>
+//Q6: Write a program to swap two numbers using a temporary variable.
+ 
 
 int main() {
 	int a, b, temp;

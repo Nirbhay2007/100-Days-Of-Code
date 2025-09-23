@@ -1,9 +1,10 @@
+//Q11: Check whether a number is even or odd.
 #include <stdio.h>
 
 int main() {
 	int num;
 
-	// Input an integer
+		
 	printf("Enter an integer: ");
 	scanf("%d", &num);
 

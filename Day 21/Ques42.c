@@ -1,3 +1,4 @@
+//Q42: Check if a number is a perfect number.
 #include <stdio.h>
 
 int main() {

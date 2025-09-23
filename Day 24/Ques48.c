@@ -1,11 +1,4 @@
-/*
-Write a program to print the following pattern:
-1
-12
-123
-1234
-12345
-*/
+//Q48: Print the number triangle pattern (1, 12, 123, 1234, 12345).
 #include <stdio.h>
 
 int main() {

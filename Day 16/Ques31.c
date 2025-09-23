@@ -1,3 +1,4 @@
+//Q31: Print the binary representation of a given number.
 #include <stdio.h>
 
 int main() {
