@@ -4,11 +4,11 @@
 int main() {
 	int num;
 
-		
+
 	printf("Enter an integer: ");
 	scanf("%d", &num);
 
-	// Check even or odd using if-else
+			
 	if (num % 2 == 0) {
 		printf("%d is even.\n", num);
 	} else {

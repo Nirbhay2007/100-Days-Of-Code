@@ -1,3 +1,4 @@
+//Q3: Write a program to input the length and breadth of a rectangle and calculate its area and perimeter.
 #include <stdio.h>
 
 int main() {
