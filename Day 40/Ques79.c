@@ -27,7 +27,6 @@ int main() {
     
     printf("\nDiagonal Traversal:\n");
     
-    // Traverse upper half (including main diagonal)
     for (int k = 0; k < cols; k++) {
         printf("Diagonal starting from [0][%d]: ", k);
         i = 0;
@@ -40,7 +39,6 @@ int main() {
         printf("\n");
     }
     
-    // Traverse lower half (excluding main diagonal)
     for (int k = 1; k < rows; k++) {
         printf("Diagonal starting from [%d][%d]: ", k, cols-1);
         i = k;

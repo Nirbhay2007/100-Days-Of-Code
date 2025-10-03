@@ -10,7 +10,7 @@ int main() {
     printf("Enter rows and columns for second matrix: ");
     scanf("%d %d", &r2, &c2);
     
-    // Check if multiplication is possible
+
     if (c1 != r2) {
         printf("Matrix multiplication not possible!\n");
         printf("Columns of first matrix (%d) must equal rows of second matrix (%d)\n", c1, r2);
@@ -19,7 +19,7 @@ int main() {
     
     int matrix1[r1][c1], matrix2[r2][c2], result[r1][c2];
     
-    // Initialize result matrix to 0
+
     for (i = 0; i < r1; i++) {
         for (j = 0; j < c2; j++) {
             result[i][j] = 0;
@@ -42,7 +42,7 @@ int main() {
         }
     }
     
-    // Matrix multiplication
+
     for (i = 0; i < r1; i++) {
         for (j = 0; j < c2; j++) {
             for (k = 0; k < c1; k++) {
