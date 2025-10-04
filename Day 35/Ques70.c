@@ -2,32 +2,44 @@
 #include <stdio.h>
 
 int main() {
-    int n, k;
-    if (scanf("%d", &n) != 1 || n <= 0) return 0;
+    int n, k, i, j;
+    
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+    
     int arr[n];
-    for (int i = 0; i < n; i++) scanf("%d", &arr[i]);
-    if (scanf("%d", &k) != 1) return 0;
+    int temp[n];
     
-    k = k % n; // handle k >= n
-    if (k < 0) k += n; // handle negative k
-    
-    // reverse entire array
-    for (int i = 0, j = n - 1; i < j; i++, j--) {
-        int tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
-    }
-    // reverse first k elements
-    for (int i = 0, j = k - 1; i < j; i++, j--) {
-        int tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
-    }
-    // reverse remaining elements
-    for (int i = k, j = n - 1; i < j; i++, j--) {
-        int tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
+    printf("Enter elements:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
     
-    for (int i = 0; i < n; i++) {
-        if (i) printf(" ");
-        printf("%d", arr[i]);
+    printf("Enter number of positions to rotate right: ");
+    scanf("%d", &k);
+    
+    printf("Original array: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
     }
     printf("\n");
+    
+    // Copy array to temp
+    for (i = 0; i < n; i++) {
+        temp[i] = arr[i];
+    }
+    
+    // Rotate
+    for (i = 0; i < n; i++) {
+        j = (i + k) % n;
+        arr[j] = temp[i];
+    }
+    
+    printf("Rotated array: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+    
     return 0;
 }

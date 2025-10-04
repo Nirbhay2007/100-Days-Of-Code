@@ -2,27 +2,40 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    if (scanf("%d", &n) != 1 || n < 2) {
-        printf("Invalid input\n");
-        return 0;
-    }
+    int n, i;
+    
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+    
     int arr[n];
-    for (int i = 0; i < n; i++) scanf("%d", &arr[i]);
-
-    int first = arr[0], second = arr[1];
-    if (first < second) {
-        int tmp = first; first = second; second = tmp;
+    
+    printf("Enter elements:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    for (int i = 2; i < n; i++) {
-        if (arr[i] > first) {
-            second = first;
-            first = arr[i];
-        } else if (arr[i] > second && arr[i] != first) {
-            second = arr[i];
+    
+    int largest = arr[0];
+    int second_largest = arr[0];
+    
+    // Find largest
+    for (i = 1; i < n; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i];
         }
     }
-    if (second == first) printf("No second largest\n");
-    else printf("%d\n", second);
+    
+    // Find second largest
+    for (i = 0; i < n; i++) {
+        if (arr[i] > second_largest && arr[i] < largest) {
+            second_largest = arr[i];
+        }
+    }
+    
+    if (second_largest == largest) {
+        printf("No second largest element found\n");
+    } else {
+        printf("Second largest element: %d\n", second_largest);
+    }
+    
     return 0;
 }

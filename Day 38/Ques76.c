@@ -2,33 +2,49 @@
 #include <stdio.h>
 
 int main() {
-    int n, m;
-    if (scanf("%d %d", &n, &m) != 2 || n <= 0 || m <= 0) return 0;
-
-    int a[n][m];
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            scanf("%d", &a[i][j]);
+    int n, i, j;
+    int is_symmetric = 1;
+    
+    printf("Enter size of square matrix: ");
+    scanf("%d", &n);
+    
+    int matrix[n][n];
+    
+    printf("Enter elements of matrix:\n");
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            printf("Element [%d][%d]: ", i, j);
+            scanf("%d", &matrix[i][j]);
         }
     }
-
-    if (n != m) {
-        printf("Not symmetric\n");
-        return 0;
+    
+    printf("\nMatrix:\n");
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
     }
-
-    int symmetric = 1;
-    for (int i = 0; i < n && symmetric; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (a[i][j] != a[j][i]) {
-                symmetric = 0;
+    
+    // Check if symmetric
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            if (matrix[i][j] != matrix[j][i]) {
+                is_symmetric = 0;
                 break;
             }
         }
+        if (is_symmetric == 0) {
+            break;
+        }
     }
-
-    if (symmetric) printf("Symmetric\n");
-    else printf("Not symmetric\n");
+    
+    if (is_symmetric == 1) {
+        printf("Matrix is symmetric\n");
+    } else {
+        printf("Matrix is not symmetric\n");
+    }
+    
     return 0;
 }
 

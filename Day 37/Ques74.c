@@ -2,23 +2,44 @@
 #include <stdio.h>
 
 int main() {
-    int rows, cols;
-    if (scanf("%d %d", &rows, &cols) != 2 || rows <= 0 || cols <= 0) return 0;
+    int rows, cols, i, j;
+    
+    printf("Enter number of rows and columns: ");
+    scanf("%d %d", &rows, &cols);
     
     int matrix[rows][cols];
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
+    int transpose[cols][rows];
+    
+    printf("Enter elements of matrix:\n");
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < cols; j++) {
+            printf("Element [%d][%d]: ", i, j);
             scanf("%d", &matrix[i][j]);
         }
     }
     
-    // Print transpose (swap rows and cols)
-    for (int j = 0; j < cols; j++) {
-        for (int i = 0; i < rows; i++) {
-            if (i) printf(" ");
-            printf("%d", matrix[i][j]);
+    printf("\nOriginal Matrix:\n");
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < cols; j++) {
+            printf("%d ", matrix[i][j]);
         }
         printf("\n");
     }
+    
+    // Find transpose
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < cols; j++) {
+            transpose[j][i] = matrix[i][j];
+        }
+    }
+    
+    printf("\nTranspose Matrix:\n");
+    for (i = 0; i < cols; i++) {
+        for (j = 0; j < rows; j++) {
+            printf("%d ", transpose[i][j]);
+        }
+        printf("\n");
+    }
+    
     return 0;
 }

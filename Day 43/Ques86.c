@@ -3,11 +3,13 @@
 
 int main() {
     char str[100];
-    int length = 0, i, isPalindrome = 1;
+    int length = 0, i;
+    int is_palindrome = 1;
     
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
     
+    // Find length
     while (str[length] != '\0' && str[length] != '\n') {
         length++;
     }
@@ -18,26 +20,18 @@ int main() {
     }
     printf("\n");
     
-    printf("Length: %d\n", length);
-    
-    printf("\nChecking palindrome:\n");
+    // Check palindrome
     for (i = 0; i < length / 2; i++) {
-        printf("Comparing str[%d] = '%c' with str[%d] = '%c': ", 
-               i, str[i], length - 1 - i, str[length - 1 - i]);
-        
         if (str[i] != str[length - 1 - i]) {
-            isPalindrome = 0;
-            printf("Not equal\n");
+            is_palindrome = 0;
             break;
-        } else {
-            printf("Equal\n");
         }
     }
     
-    if (isPalindrome) {
-        printf("\nResult: The string is a PALINDROME!\n");
+    if (is_palindrome == 1) {
+        printf("The string is a palindrome\n");
     } else {
-        printf("\nResult: The string is NOT a palindrome.\n");
+        printf("The string is not a palindrome\n");
     }
     
     return 0;
