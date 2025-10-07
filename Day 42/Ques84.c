@@ -10,7 +10,6 @@ int main() {
     
     printf("Original string: %s", str);
     
-    // Convert to uppercase manually
     while (str[i] != '\0') {
         if (str[i] >= 'a' && str[i] <= 'z') {
             str[i] = str[i] - 32;  // Convert to uppercase
@@ -20,7 +19,6 @@ int main() {
     
     printf("Uppercase string: %s", str);
     
-    // Show ASCII difference
     printf("\nNote: ASCII difference between lowercase and uppercase is 32\n");
     printf("Example: 'a' (97) - 32 = 'A' (65)\n");
     
