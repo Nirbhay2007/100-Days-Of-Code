@@ -1,4 +1,4 @@
-//Q123: Count characters, words, and lines in a file
+//Q123: Count characters, words, and lines in file
 #include <stdio.h>
 
 int main() {
@@ -8,7 +8,7 @@ int main() {
     int characters = 0, words = 0, lines = 0;
     int in_word = 0;
     
-    printf("Enter filename to analyze: ");
+    printf("Enter filename: ");
     scanf("%s", filename);
     
     file = fopen(filename, "r");
@@ -21,12 +21,10 @@ int main() {
     while ((ch = fgetc(file)) != EOF) {
         characters++;
         
-        // Count lines
         if (ch == '\n') {
             lines++;
         }
         
-        // Count words
         if (ch == ' ' || ch == '\n' || ch == '\t') {
             in_word = 0;
         } else if (in_word == 0) {
@@ -35,7 +33,6 @@ int main() {
         }
     }
     
-    // If file doesn't end with newline, count last line
     if (characters > 0 && ch != '\n') {
         lines++;
     }

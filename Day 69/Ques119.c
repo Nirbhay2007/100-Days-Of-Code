@@ -14,14 +14,7 @@ int main() {
         scanf("%d", &nums[i]);
     }
     
-    printf("Array: ");
-    for (i = 0; i < n; i++) {
-        printf("%d ", nums[i]);
-    }
-    printf("\n");
-    
-    // Using XOR approach or sum approach
-    // Method 1: Using sum formula
+    // Using sum approach
     int actual_sum = 0;
     int expected_sum = 0;
     
@@ -29,7 +22,7 @@ int main() {
         actual_sum += nums[i];
     }
     
-    // Find max element to determine range
+    // Find max element
     int max = nums[0];
     for (i = 1; i < n; i++) {
         if (nums[i] > max) {

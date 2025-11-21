@@ -14,12 +14,6 @@ int main() {
         scanf("%d", &nums[i]);
     }
     
-    printf("Array: ");
-    for (i = 0; i < n; i++) {
-        printf("%d ", nums[i]);
-    }
-    printf("\n");
-    
     // Calculate expected sum (0 to n)
     int expected_sum = (n * (n + 1)) / 2;
     
@@ -31,8 +25,6 @@ int main() {
     
     int missing = expected_sum - actual_sum;
     
-    printf("Expected sum (0 to %d): %d\n", n, expected_sum);
-    printf("Actual sum: %d\n", actual_sum);
     printf("Missing number: %d\n", missing);
     
     return 0;

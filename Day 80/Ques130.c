@@ -1,4 +1,4 @@
-//Q130: Store and read student records using fprintf() and fscanf()
+//Q130: Store and read student records
 #include <stdio.h>
 
 int main() {
@@ -8,13 +8,12 @@ int main() {
     int roll, marks;
     
     printf("Student Records Management\n");
-    printf("1. Write student records\n");
-    printf("2. Read student records\n");
+    printf("1. Write records\n");
+    printf("2. Read records\n");
     printf("Enter choice: ");
     scanf("%d", &choice);
     
     if (choice == 1) {
-        // Write records
         file = fopen("students.txt", "w");
         
         if (file == NULL) {
@@ -41,7 +40,6 @@ int main() {
         printf("\nRecords saved successfully!\n");
         
     } else if (choice == 2) {
-        // Read records
         file = fopen("students.txt", "r");
         
         if (file == NULL) {

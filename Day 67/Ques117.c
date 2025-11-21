@@ -24,18 +24,6 @@ int main() {
         scanf("%d", &nums2[i]);
     }
     
-    printf("First array: ");
-    for (i = 0; i < m; i++) {
-        printf("%d ", nums1[i]);
-    }
-    printf("\n");
-    
-    printf("Second array: ");
-    for (i = 0; i < n; i++) {
-        printf("%d ", nums2[i]);
-    }
-    printf("\n");
-    
     // Merge arrays
     int merged[m + n];
     i = 0; j = 0; k = 0;
@@ -48,7 +36,6 @@ int main() {
         }
     }
     
-    // Copy remaining elements
     while (i < m) {
         merged[k++] = nums1[i++];
     }

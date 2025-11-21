@@ -22,7 +22,6 @@ int main() {
         printf("%d ", arr[i]);
     }
     printf("\n");
-    printf("k: %d\n", k);
     
     // Sort array using bubble sort
     for (i = 0; i < n - 1; i++) {

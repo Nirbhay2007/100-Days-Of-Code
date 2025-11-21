@@ -1,4 +1,4 @@
-//Q121: Create file and write user data using fprintf()
+//Q121: Create file and write user data
 #include <stdio.h>
 
 int main() {
@@ -12,7 +12,6 @@ int main() {
     printf("Enter your age: ");
     scanf("%d", &age);
     
-    // Create and open file in write mode
     file = fopen("info.txt", "w");
     
     if (file == NULL) {
@@ -20,11 +19,9 @@ int main() {
         return 1;
     }
     
-    // Write data to file
     fprintf(file, "Name: %s", name);
     fprintf(file, "Age: %d\n", age);
     
-    // Close file
     fclose(file);
     
     printf("\nData successfully saved to info.txt!\n");

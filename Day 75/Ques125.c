@@ -1,4 +1,4 @@
-//Q125: Append text to existing file
+//Q125: Append text to file
 #include <stdio.h>
 
 int main() {
@@ -6,14 +6,13 @@ int main() {
     char filename[50];
     char text[200];
     
-    printf("Enter filename to append to: ");
+    printf("Enter filename: ");
     scanf("%s", filename);
-    getchar();  // Clear newline from buffer
+    getchar();
     
     printf("Enter text to append: ");
     fgets(text, sizeof(text), stdin);
     
-    // Open file in append mode
     file = fopen(filename, "a");
     
     if (file == NULL) {
@@ -21,7 +20,6 @@ int main() {
         return 1;
     }
     
-    // Append text to file
     fprintf(file, "%s", text);
     
     fclose(file);

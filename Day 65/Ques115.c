@@ -19,7 +19,6 @@ int main() {
     int len_s = strlen(s);
     int len_t = strlen(t);
     
-    // If lengths are different, not anagrams
     if (len_s != len_t) {
         printf("Not Anagram\n");
         return 0;

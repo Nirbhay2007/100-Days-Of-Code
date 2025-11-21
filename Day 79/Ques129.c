@@ -1,4 +1,4 @@
-//Q129: Calculate sum and average of numbers in file
+//Q129: Calculate sum and average from file
 #include <stdio.h>
 
 int main() {
@@ -14,11 +14,8 @@ int main() {
     }
     
     printf("Reading numbers from numbers.txt...\n");
-    printf("Numbers: ");
     
-    // Read integers from file
     while (fscanf(file, "%d", &num) == 1) {
-        printf("%d ", num);
         sum += num;
         count++;
     }
@@ -26,13 +23,12 @@ int main() {
     fclose(file);
     
     if (count == 0) {
-        printf("\nNo numbers found in file!\n");
+        printf("No numbers found in file!\n");
         return 1;
     }
     
     average = (float)sum / count;
     
-    printf("\n\nStatistics:\n");
     printf("Count: %d\n", count);
     printf("Sum: %d\n", sum);
     printf("Average: %.2f\n", average);

@@ -9,7 +9,6 @@ int main() {
     printf("Enter filename: ");
     scanf("%s", filename);
     
-    // Try to open file in read mode
     file = fopen(filename, "r");
     
     if (file == NULL) {
@@ -21,7 +20,6 @@ int main() {
     printf("\nFile contents:\n");
     printf("---------------------\n");
     
-    // Read and display file contents
     while (fgets(line, sizeof(line), file) != NULL) {
         printf("%s", line);
     }

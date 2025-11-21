@@ -29,8 +29,7 @@ int main() {
     for (i = 0; i < n - 1; i++) {
         for (j = i + 1; j < n; j++) {
             if (nums[i] + nums[j] == target) {
-                printf("Indices: %d %d\n", i, j);
-                printf("Values: nums[%d] = %d, nums[%d] = %d\n", i, nums[i], j, nums[j]);
+                printf("%d %d\n", i, j);
                 found = 1;
                 break;
             }

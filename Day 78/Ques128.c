@@ -18,14 +18,11 @@ int main() {
     }
     
     while ((ch = fgetc(file)) != EOF) {
-        // Convert to lowercase for easier checking
         if (ch >= 'A' && ch <= 'Z') {
             ch = ch + 32;
         }
         
-        // Check if alphabetic
         if (ch >= 'a' && ch <= 'z') {
-            // Check if vowel
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
                 vowels++;
             } else {
@@ -39,7 +36,6 @@ int main() {
     printf("\nFile Analysis:\n");
     printf("Vowels: %d\n", vowels);
     printf("Consonants: %d\n", consonants);
-    printf("Total alphabetic characters: %d\n", vowels + consonants);
     
     return 0;
 }

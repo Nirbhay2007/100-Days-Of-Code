@@ -12,14 +12,12 @@ int main() {
     
     int len = strlen(s);
     printf("String: %s\n", s);
-    printf("Length: %d\n", len);
     
     // Check all substrings
     for (i = 0; i < len; i++) {
-        int visited[256] = {0};  // Track visited characters
+        int visited[256] = {0};
         
         for (j = i; j < len; j++) {
-            // If character already visited, break
             if (visited[(int)s[j]] == 1) {
                 break;
             }
